@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    /* background-color: rgb(215, 215, 215); */
+    justify-content: center;
+    font-family: Roboto;
+}
+
+#sub-nav {
+    display: flex;
+    width: 90vw;
+    height: 7vh;
+    flex-direction: row;
+    /* background-color: wheat; */
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-size: 19px;
+    font-weight: bold;
+    z-index: 4;
+}
+#fullstop{
+    font-size: 8px;
+}
+#refer {
+    width: 500px;
+}
+
+#refer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#refer ul li {
+    list-style: none;
+}
+
+#refer ul li a {
+    color: black;
+    text-decoration: none;
+}
+#res-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    width: 150px;
+    height: 34px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 60px;
+    color: black;
+}
+#res-download:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(74, 221, 235);
+    border: 1px solid rgb(74, 221, 235);
+}
+#download{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    width: 150px;
+    height: 34px;
+    border-radius: 6px;
+    padding: 10px;
+    color: black;
+}
+#download:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(74, 221, 235);
+    border: 1px solid rgb(74, 221, 235);
+}
+#font-download{
+    margin-top: 2px;
+}
+#hamburger{
+    display: none;
+    margin-top: 3px;
+    /* margin-right: 15px; */
+    font-size: 25px;
+}
+#side-page {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 60vw;
+    height: 100vh;
+    background-color: rgb(217, 239, 242);
+    transform: translateX(100%);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 20px;
+    z-index: 10;
+    display: none;
+}
+#cut{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 28px;
+    background-color: rgb(245, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+#res-refer ul{
+    display: flex;
+    flex-direction: column;
+}
+#res-refer ul{
+    margin-top: 200px;
+    margin-left: 40px;
+}
+#res-refer ul li{
+    list-style: none;
+    font-size: 30px;
+    margin-top: 23px;
+}
+#res-refer ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#theme{
+    position: absolute;
+    top: -65px;
+    left: -94px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+#full-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    display: none;
+  }
+#full-blur.active {
+    display: block;
+}
+.goto a, .res-goto a{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.goto a:hover , .res-goto a:hover{
+    color: rgb(48, 225, 28) !important;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 924px) {
+    #refer {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 850px){
+    #refer{
+        display: none;
+    }
+    #download{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+@media screen and (max-width: 550px){
+    #res-refer ul li{
+        font-size: 22px;
+    }
+}

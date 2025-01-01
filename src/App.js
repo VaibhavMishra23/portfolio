@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react'
+import Navbar from './components/Navbar'
+import Profiles from './components/Profiles'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 function App() {
+  const [theme,setTheme] = useState('light');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={{backgroundColor: theme=='light'?'white':'#042743'}}>
+    <Navbar theme={theme} setTheme={setTheme}/>
+    <Profiles theme={theme} setTheme={setTheme}/>
+    <About theme={theme} setTheme={setTheme}/>
+    <Projects theme={theme} setTheme={setTheme}/>
+    <Contact theme={theme}/>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

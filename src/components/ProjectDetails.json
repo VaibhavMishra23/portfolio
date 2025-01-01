@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Bizz",
+        "description": "It is web platform where you can read all the latest news for free. You can choose the veriaty of options where you can select one at a time and see all the related news of that topic.",
+        "link": "https://vaibhavmishra23.github.io/Bizz/",
+        "portable": "PC and Mobile",
+        "technology":"frontend"
+    },
+    {
+        "name":"DonationConnect",
+        "description": "DonationConnect is a platform designed to bridge the gap between donors and those in need. The website provides a seamless way for individuals and organizations to contribute to meaningful causes, empowering communities through generosity.",
+        "link": "https://vaibhavmishra23.github.io/DonationConnect/",
+        "portable": "PC and Mobile",
+        "technology":"frontend"
+    },
+    {
+        "name":"SnakeDish",
+        "description": "This is a classic Snake Game built using only frontend technologies like HTML, CSS, and JavaScript. Players control a snake that moves around the game area, eating food to grow longer. The goal is to avoid colliding with the walls or the snake's own body while achieving the highest possible score.",
+        "link":"https://vaibhavmishra23.github.io/SnakeDish/",
+        "portable":"PC",
+        "technology":"frontend"
+    },
+    {
+        "name":"FlappyChidiya",
+        "description": "Flappy Chidiya is an exciting and fun game inspired by the classic flappy bird, developed using only frontend technologies like HTML, CSS, and JavaScript. Players control a small bird (Chidiya) that must navigate through gaps between obstacles without falling or crashing. The game tests timing and precision as the bird 'flaps' with every click.",
+        "link":"https://vaibhavmishra23.github.io/FlappyChidiya/",
+        "portable":"PC",
+        "technology":"frontend"
+    }
+]

@@ -1,0 +1,220 @@
+#about-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 528px;
+    font-family: Fira Code;
+}
+#parent-download-3{
+    margin-top: 6px;
+    height: 2px;
+}
+#download-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(112, 119, 227);
+    width: 150px;
+    height: 36px;
+    border-radius: 50px;
+    padding: 10px;
+    float: right;
+    margin-top: 16px;
+}
+#download-3:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(74, 147, 235);
+    border: 1px solid rgb(74, 147, 235);
+}
+#font-download{
+    margin-top: 2px;
+    font-size: 20px;
+}
+#about-sub-container{
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    gap: 50px;
+    flex-direction: column;
+}
+li{
+    list-style: none;
+}
+#about-sub-block{
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+    overflow-x: hidden;
+}
+#about-skills{
+    display: flex;
+    gap: 40px;
+    overflow-x: hidden;
+}
+#about-me{
+    width: 414px;
+    height: 219px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 21px;
+    padding: 15px;
+    background-color: rgb(230, 242, 238);
+    box-shadow: 2px 2px 7px black;
+    overflow-x: hidden;
+}
+#about-me p{
+    color: rgb(41, 37, 61);
+}
+#about-me h3{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 13px;
+    color: rgb(84, 84, 84);
+}
+#about-heading{
+    font-size: 22px;
+    font-weight: 600;
+    margin: auto;
+}
+#parent-language h4, #parent-database h4, #parent-backend h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#parent-language ul li{
+    text-align: center;
+}
+#parent-database ul li{
+    text-align: center;
+}
+#parent-backend ul li{
+    text-align: center;
+}
+#cpp{
+    background-color: rgb(112, 119, 227);
+    width: 38px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#javascript{
+    background-color: rgb(112, 119, 227);
+    width: 80px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#python{
+    background-color: rgb(112, 119, 227);
+    width: 55px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#html5{
+    background-color: rgb(112, 119, 227);
+    width: 60px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#css3{
+    background-color: rgb(112, 119, 227);
+    width: 50px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#node{
+    background-color: rgb(112, 119, 227);
+    width: 85px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#flask{
+    background-color: rgb(112, 119, 227);
+    width: 50px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#sql{
+    background-color: rgb(112, 119, 227);
+    width: 49px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+#nosql{
+    background-color: rgb(112, 119, 227);
+    width: 64px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+}
+@media screen and (max-width:1076px){
+    #parent-download-3 {
+        margin-top: -2px;
+    }
+}
+@media screen and (max-width:1039px){
+    #about-sub-block{
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 939px) and (min-width: 901px){
+    #download-3{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:902px){
+    #about-sub-block{
+        flex-wrap: wrap;
+        min-height: 466px;
+        gap: 46px;
+        overflow-x: hidden;
+    }
+    #about-container{
+        margin-top: 26px;
+        margin-bottom: 220px;
+    }
+    #about-skills{
+        display: flex;
+        gap: 17px;
+    }
+}
+@media screen and (max-width:441px){
+    #download-3{
+        position: relative;
+        top: -10px;
+        right: 10px;
+    }
+}
+@media screen and (max-width:389px){
+    #download-3{
+        position: relative;
+        top: -23px;
+        right: 10px;
+    }
+}
+@media screen and (min-height:900px) and (max-height:936px){
+    #about-container{
+        margin-top: 26px;
+        margin-bottom: 91px;
+    }
+}

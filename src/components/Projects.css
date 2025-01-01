@@ -1,0 +1,275 @@
+#project-container{
+    width: 85vw;
+    /* height: 60vh; */
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    font-family: Arial;
+}
+#title-project{
+    font-size: 22px;
+    font-weight: 600;
+}
+#project-type{
+    display: flex;
+    gap: 100px;
+    overflow-x: hidden;
+    min-height: 235px;
+}
+#logo-individual{
+    font-size: 36px;
+    color: rgb(0, 193, 197);
+}
+#individual-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background-color: rgb(230, 242, 238);
+    width: 414px;
+    height: 219px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 22px;
+    box-shadow: 3px 3px 7px grey;
+    position: relative;
+    overflow: hidden;
+}
+#group-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background-color: rgb(230, 242, 238);
+    width: 414px;
+    height: 219px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 22px;
+    box-shadow: -3px 3px 7px grey;
+    position: relative;
+    overflow: hidden;
+}
+#certification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background-color: rgb(230, 242, 238);
+    width: 414px;
+    height: 219px;
+    border-radius: 22px;
+    box-shadow: -3px 3px 7px grey;
+    position: relative;
+    overflow: hidden;
+}
+#individual-content p{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+#logo-group{
+    font-size: 36px;
+    color: rgb(0, 193, 197);
+}
+#logo-certification{
+    font-size: 36px;
+    color: rgb(0, 193, 197);
+}
+#group-content p{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+#certification-content p{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 14px;
+}
+#group-content h4{
+    margin-left: 7px;
+}
+#certification-content h4{
+    margin-left: 7px;
+}
+#individual-content h4, #group-content h4,#certification-content h4{
+    font-size: 16px;
+}
+#individual-projects::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 212, 212);
+    transition: bottom 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+#individual-projects:hover::before {
+   bottom: 0;
+}
+#individual-projects:hover{
+    color: white;
+}
+#individual-projects:hover #logo-individual {
+    color: white;
+}
+#individual-content, #logo-individual {
+    position: relative;
+    z-index: 2;
+}
+#group-projects::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 212, 212);
+    transition: bottom 0.5s ease;
+    z-index: 1;
+    pointer-events: none; /* Prevents intercepting click events */
+}
+#group-projects:hover::before {
+   bottom: 0;
+}
+#group-projects:hover{
+    color: white;
+}
+#group-projects:hover #logo-group {
+    color: white;
+}
+#group-content, #logo-group {
+    position: relative;
+    z-index: 2;
+}
+#certification::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 212, 212);
+    transition: bottom 0.5s ease;
+    z-index: 1;
+    pointer-events: none; /* Prevents intercepting click events */
+}
+#certification:hover::before {
+   bottom: 0;
+}
+#certification:hover{
+    color: white;
+}
+#certification:hover #logo-certification {
+    color: white;
+}
+#certification-content, #logo-certification {
+    position: relative;
+    z-index: 2;
+}
+#parentViewCV{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(69, 69, 69,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+#viewCV{
+    width: 35vw;
+    height: 95vh;
+    cursor: pointer;
+}
+@media screen and (max-width:1476px){
+    #project-type{
+        gap:50px;
+    }
+}
+@media screen and (max-width:1392px){
+    #certification,#group-projects,#individual-projects{
+        width: 295px;
+    }
+}
+@media screen and (max-width: 1400px){
+    #viewCV{
+        width: 45vw;
+        cursor: pointer;
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 1150px){
+    #viewCV{
+        width: 55vw;
+        cursor: pointer;
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 940px){
+    #viewCV{
+        width: 65vw;
+        cursor: pointer;
+        height: 90vh;
+    }
+}
+@media screen and (max-width:1032px){
+    #project-type{
+        gap:25px;
+    }
+}
+@media screen and (max-width:975px){
+    #project-type{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #certification{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 724px){
+    #viewCV{
+        width: 90vw;
+        cursor: pointer;
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 510px){
+    #viewCV{
+        width: 90vw;
+        cursor: pointer;
+        height: 74vh;
+    }
+}
+@media screen and (max-width: 450px){
+    #viewCV{
+        width: 90vw;
+        cursor: pointer;
+        height: 65vh;
+    }
+}
+@media screen and (max-width:456px){
+    #individual-projects{
+        width: 302px;
+        height: 178px;
+    }
+    #group-projects{
+        width: 302px;
+        height: 178px;
+    }
+}
