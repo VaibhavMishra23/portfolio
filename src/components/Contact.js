@@ -12,9 +12,9 @@ function Contact(props) {
 
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=vaibhavmishra230304@gmail.com&su=${encodeURIComponent(
       subject
-    )}&body=${encodeURIComponent(`Name: ${name}\nContact Me On: ${email}\n\n${message}`)}`;
+    )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
 
-    window.location.href = mailtoLink;
+    window.open(mailtoLink, "_blank");
   };
 
   return (
@@ -27,8 +27,8 @@ function Contact(props) {
           <input type="text" id="name" placeholder="Your Name" required style={{backgroundColor: props.theme=='light'?'white':'#042743',color: props.theme=='light'?'black':'white'}}/>
         </div>
         <div className="form-group">
-          <label htmlFor="email">Contact Me On</label>
-          <input id="email" placeholder="Your Email Or Phone No." required  style={{backgroundColor: props.theme=='light'?'white':'#042743',color: props.theme=='light'?'black':'white'}}/>
+          <label htmlFor="email">Email</label>
+          <input id="email" placeholder="Your Email or Phone Number" required  style={{backgroundColor: props.theme=='light'?'white':'#042743',color: props.theme=='light'?'black':'white'}}/>
         </div>
         <div className="form-group">
           <label htmlFor="subject">Subject</label>
