@@ -27,7 +27,7 @@ function Contact(props) {
           <input type="text" id="name" placeholder="Your Name" required style={{backgroundColor: props.theme=='light'?'white':'#042743',color: props.theme=='light'?'black':'white'}}/>
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Contact Me On</label>
           <input id="email" placeholder="Your Email or Phone Number" required  style={{backgroundColor: props.theme=='light'?'white':'#042743',color: props.theme=='light'?'black':'white'}}/>
         </div>
         <div className="form-group">
