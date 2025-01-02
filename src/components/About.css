@@ -218,3 +218,11 @@ li{
         margin-bottom: 91px;
     }
 }
+@media screen and (max-width:364px){
+    #parent-download-3 {
+        margin-top: 12px;
+    }
+    #about-me{
+        height: 229px;
+    }
+}
