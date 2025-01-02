@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 528px;
+    min-height: 528px;
     font-family: Fira Code;
 }
 #parent-download-3{
@@ -37,7 +37,7 @@
 #about-sub-container{
     display: flex;
     width: 90vw;
-    height: 50vh;
+    min-height: 50vh;
     gap: 50px;
     flex-direction: column;
 }
@@ -46,7 +46,7 @@ li{
 }
 #about-sub-block{
     display: flex;
-    height: 40vh;
+    min-height: 40vh;
     align-items: center;
     justify-content: center;
     gap: 170px;
@@ -59,7 +59,7 @@ li{
 }
 #about-me{
     width: 414px;
-    height: 219px;
+    min-height: 219px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 21px;
     padding: 15px;
@@ -208,7 +208,7 @@ li{
 @media screen and (max-width:389px){
     #download-3{
         position: relative;
-        top: -23px;
+        top: -1px;
         right: 10px;
     }
 }
@@ -223,23 +223,18 @@ li{
         margin-top: 12px;
     }
     #about-me{
-        height: 229px;
+        min-height: 229px;
     }
 }
 @media screen and (max-width:337px){
     #parent-download-3 {
         margin-top: 0px;
     }
-    #about-me{
-        height: 229px;
-    }
 }
 @media screen and (max-width:337px){
     #about-me{
-        height: 269px;
-    }
-    #about-container {
-        margin-bottom: 190px;
+        min-height: 269px;
+        overflow-x: visible;
     }
     #about-sub-block{
         min-height: 550px;

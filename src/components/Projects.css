@@ -272,6 +272,10 @@
         width: 302px;
         height: 178px;
     }
+    #certification{
+        width: 302px;
+        height: 178px;
+    }
 }
 @media screen and (max-width:313px){
     #individual-projects,#group-projects,#certification{
