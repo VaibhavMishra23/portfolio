@@ -191,7 +191,7 @@ li{
     }
     #about-container{
         margin-top: 26px;
-        margin-bottom: 220px;
+        margin-bottom: 150px;
     }
     #about-skills{
         display: flex;
@@ -216,6 +216,12 @@ li{
     #about-container{
         margin-top: 26px;
         margin-bottom: 91px;
+    }
+}
+@media screen and (min-height:900px) and (max-height:936px) and (max-width:815px){
+    #about-container{
+        margin-top: 26px;
+        margin-bottom: 44px;
     }
 }
 @media screen and (max-width:364px){
@@ -246,5 +252,10 @@ li{
 @media screen and (max-width:303px){
     #about-skills {
         gap: 9px;
+    }
+}
+@media screen and (max-width: 721px){
+    #about-container{
+        margin-top: 100px;
     }
 }
