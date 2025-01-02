@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BsPerson } from "react-icons/bs";
-import { BsPeople } from "react-icons/bs";
+import { BsFileEarmarkText } from "react-icons/bs";
+import { BsAward } from "react-icons/bs";
 import Certificate from './Certificate'
 import './Projects.css'
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -93,14 +94,17 @@ function Projects(props){
                     </div>
                 </div>
                 <div id='group-projects' onClick={handleCV}>
-                    <div id='logo-group'><BsPeople /></div>
+                    <div id='logo-group'><BsFileEarmarkText />
+                    </div>
                     <div id='group-content'>
                         <h4 id='group-heading'>For More Details</h4>
                         <p id='group-inside-content'>View CV</p>
                     </div>
                 </div>
                 <div id='certification' onClick={handleCertification}>
-                    <div id='logo-certification'><BsPeople /></div>
+                    <div id='logo-certification'><BsAward />
+
+                    </div>
                     <div id='certification-content'>
                         <h4 id='certification-heading'>Certifications</h4>
                         <p id='certification-inside-content'>5+ Certifications</p>
