@@ -234,3 +234,22 @@ li{
         height: 229px;
     }
 }
+@media screen and (max-width:337px){
+    #about-me{
+        height: 269px;
+    }
+    #about-container {
+        margin-bottom: 190px;
+    }
+    #about-sub-block{
+        min-height: 550px;
+    }
+    #parent-download-3 {
+        margin-top: 18px;
+    }
+}
+@media screen and (max-width:303px){
+    #about-skills {
+        gap: 9px;
+    }
+}

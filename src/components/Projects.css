@@ -273,3 +273,8 @@
         height: 178px;
     }
 }
+@media screen and (max-width:313px){
+    #individual-projects,#group-projects,#certification{
+        width: 255px;
+    }
+}
