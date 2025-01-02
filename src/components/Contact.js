@@ -21,6 +21,7 @@ function Contact(props) {
     <section id="contact" className="contact-section" style={{backgroundColor: props.theme=='light'?'#f3f4f6':'#042743'}}>
       <h2 style={{color: props.theme=='light'?'black':'white'}}>Contact Me</h2>
       <p style={{color: props.theme=='light'?'black':'silver'}}>Feel free to get in touch via email!</p>
+      <p style={{color: props.theme=='light'?'grey':'silver'}}>Contact Vaibhav Mishra On - vaibhavmishra230304@gmail.com</p>
       <form id="contact-form" onSubmit={handleSendEmail}>
         <div className="form-group" >
           <label htmlFor="name" >Name</label>
